@@ -1,0 +1,58 @@
+.team_part .team_upper_part h1{
+    color: var(--danger-color);
+    position: relative;
+}
+.team_part .team_upper_part h1::after,
+.team_part .team_upper_part h1::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    height: 0.3rem;
+    background-color: var(--danger-color);
+}
+.team_part .team_upper_part h1::after{
+    right: 0;
+}
+.team_part .team_upper_part h1::before{
+    left: 0;
+}
+.team_part .team_upper_part p{
+    opacity: 0.8;
+}
+.team_part .team_lower_part .members .member_img{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--main-light-color);
+    box-shadow: 1px 1px 10px #00000063;
+}
+.team_part .team_lower_part .members .member_details span{
+    opacity: 0.9;
+}
+.team_part .team_lower_part .members .member_details p{
+    opacity: 0.6;
+    font-size: 12px;
+}
+.team_part .team_lower_part .members .member_img:hover .members_icons {
+    visibility: visible;
+}
+
+.team_part .team_lower_part .members .member_img .members_icons {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.team_part .team_lower_part .members .member_img .members_icons i{
+    font-size: 25px;
+    color: var(--main-light-color);
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover{
+        color: var(--danger-color);
+    }
+}

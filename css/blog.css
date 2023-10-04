@@ -1,0 +1,7 @@
+.append_blog a{
+    text-decoration: none;
+}
+.append_blog{padding: 1rem 0.5rem;}
+.append_blog a span{
+    font-size: 30px;
+}

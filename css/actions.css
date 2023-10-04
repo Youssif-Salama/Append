@@ -1,0 +1,116 @@
+.actions .actions_bar {
+    background-image: url("../images/cta-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.actions .actions_bar .layout {
+    padding: 5rem 0;
+    background-color: #1f1f1f63;
+}
+
+.actions .actions_bar .layout button {
+    background-color: unset;
+    outline: 0;
+    border: 2px solid #fafafa;
+    border-radius: 20px;
+    color: var(--main-light-color);
+    padding: 0.5rem 1rem;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background-color: var(--danger-color);
+    }
+}
+.actions .actions_slider{
+    background-color: var(--main-light-color);
+}
+.actions .actions_slider swiper-container swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions .actions_slider swiper-container swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.actions .actions_slider swiper-container swiper-slide .slide_upper_part .slide_upper_part_img{
+    overflow: hidden;
+}
+.actions .actions_slider swiper-container swiper-slide .slide_upper_part .slide_upper_part_img img{
+    border: 5px solid var(--danger-color);
+    border-radius: 50%; 
+}
+.actions .actions_slider swiper-container swiper-slide .slide_upper_part .slide_upper_part_text{
+    display: flex;
+    flex-direction: column;
+}
+.actions .actions_slider swiper-container swiper-slide .slide_lower_part{
+    position: relative;
+}
+.actions .actions_slider swiper-container swiper-slide .slide_lower_part::before{
+    content: "وو";
+    color: var(--danger-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-180deg);
+}
+.actions .actions_slider swiper-container swiper-slide .slide_lower_part::after{
+    content: "وو";
+    color: var(--danger-color);
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+}
+/* blog second part */
+.actions .actions_recent_posts .posts_cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.actions .actions_recent_posts .posts_cards .kard{
+    border: 1px solid #1f1f1f4b;
+    border-radius: 20px;
+    margin: 1rem auto;
+    padding: 0;
+    overflow: hidden;
+}
+.actions .actions_recent_posts h1{
+    color: var(--danger-color);
+    position: relative;
+}
+.actions .actions_recent_posts h1::before,
+.actions .actions_recent_posts h1::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    height: 0.5rem;
+    background-color: var(--danger-color);
+}
+.actions .actions_recent_posts h1::after{
+    right: 0;
+}
+.actions .actions_recent_posts h1::before{
+    left: 0;
+}
+.actions .actions_recent_posts p{
+    opacity: 0.8;
+}
+.actions .actions_recent_posts .kard span{
+    opacity: 0.5;
+}
+.actions .actions_recent_posts .kard p{
+    opacity: 1;
+}
+.actions .actions_recent_posts .kard .author .author_img img{
+    border: 1px solid red;
+    border-radius:50% ;
+}

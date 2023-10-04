@@ -1,0 +1,66 @@
+.contact .contact_upper_part h1 {
+    color: var(--danger-color);
+    position: relative;
+}
+
+.contact .contact_upper_part h1::before,
+.contact .contact_upper_part h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    height: 0.5rem;
+    background-color: var(--danger-color);
+}
+
+.contact .contact_upper_part h1::after {
+    right: 0;
+}
+
+.contact .contact_upper_part h1::before {
+    left: 0;
+}
+
+.contact .contact_upper_part p {
+    opacity: 0.8;
+}
+
+.contact .contact_lower_part .contact_lower_left_part .icon i {
+    color: var(--danger-color);
+    font-size: 50px;
+    padding: 1rem 0;
+}
+
+.contact .contact_lower_part form :nth-child(1) {
+    width: 48%;
+}
+
+.contact .contact_lower_part form :nth-child(2) {
+    width: 49%;
+}
+
+.contact .contact_lower_part form :nth-child(3) {
+    width: 99%;
+}
+
+.contact .contact_lower_part form input {
+    padding: 5px;
+    border: 0;
+    margin: 1rem 0.2rem;
+}
+
+.contact .contact_lower_part form textarea:focus,
+.contact .contact_lower_part form input:focus {
+    outline: 2px solid var(--danger-color);
+}
+
+.contact .contact_lower_part form textarea {
+    border: 0;
+    color: var(--danger-color);
+    width: 99%;
+}
+
+.contact .contact_lower_part form button {
+    margin: 1rem 0 0 0;
+    padding: 0.2rem 1rem;
+}

@@ -1,0 +1,53 @@
+.about-section {
+    padding: 5rem 0 !important;
+    overflow: hidden;
+    background-color: var(--about-bg-color);
+}
+
+.about-section .about-section-container {
+    width: 85%;
+}
+
+.about-section .about-section-container .case .about-section-cards-part .card {
+    border-radius: 20px;
+    margin: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s all ease;
+}
+
+.about-section .about-section-container .case .about-section-cards-part .card * {
+    margin: 0.5rem;
+}
+
+.about-section .about-section-container .case .about-section-cards-part .card .icon i {
+    padding: 3rem;
+    background-color: rgba(255, 0, 0, 0.14);
+    color: var(--danger-color);
+    font-size: 30px;
+    transition: 0.3s all ease;
+}
+
+.about-section .about-section-container .case .about-section-cards-part .card:hover .icon i {
+    background-color: var(--danger-color);
+    color: var(--main-light-color);
+}
+
+/* Styling transformed cards */
+.about-section .about-section-container .case .about-section-cards-part .card2,
+.about-section .about-section-container .case .about-section-cards-part .card4 {
+    transform: translateY(-1rem);
+}
+
+.about-section .about-section-container .case .about-section-cards-part .card:hover {
+    box-shadow: var(--danger-color) 0px 25px 20px -20px;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* Media */
+@media (max-width: 800px) {
+    .about-section .about-section-container .case .about-section-cards-part .card2,
+    .about-section .about-section-container .case .about-section-cards-part .card4 {
+        transform: translateY(0);
+    }
+}

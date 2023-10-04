@@ -1,0 +1,21 @@
+.footer .footer_upper_part ul li a{
+    color: #1f1f1f;
+    transition: 0.2s mall ease;
+    &:hover{
+        color:var(--danger-color);
+    }
+}
+.footer .footer_upper_part .append .links i{
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.footer .footer_upper_part .append .links i:hover{
+    color: var(--danger-color);
+    transform: scale(1.5);
+}
+.footer .footer_lower_part{
+    background-color: #e6e5e5;
+}

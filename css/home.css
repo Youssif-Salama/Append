@@ -1,0 +1,77 @@
+.home-section {
+    position: relative;
+    padding-top: 5rem;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-section .layout {
+    position: absolute;
+    top: 0;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-section .home-section-content {
+    position: relative;
+    z-index: 1;
+    color: var(--main-light-color);
+    padding: 0 0 0 9rem;
+}
+
+.home-section .home-section-content h2 {
+    font-size: 50px;
+}
+
+.home-section .home-section-content p {
+    font-size: 20px;
+}
+
+.home-section .home-section-content form input {
+    outline: 0;
+}
+
+.home-clients {
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+
+.home-clients span {
+    margin: 1rem 0;
+}
+
+.home-clients span img {
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.home-clients span:hover img {
+    opacity: 1;
+    filter: none;
+}
+
+@media (max-width: 800px) {
+    .home-section .home-section-content * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-section .home-section-content {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .home-section .home-section-content form {
+        margin: auto !important;
+        padding: 0;
+        width: 90%;
+    }
+}
